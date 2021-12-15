@@ -1,0 +1,24 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div style="display: flex; flex-flow: column; justify-content: center; margin: auto; align-items: center; margin-top: 5%;">
+        <div>
+            <input type="text" id="input" />
+            <input type="button" onclick="Show()" value="Show" />
+        </div>
+
+        <h1 id="displayer"></h1>
+    </div>
+    <script>
+        function Show() {
+            var text = document.getElementById("input").value;
+            document.getElementById("displayer").textContent = text.toUpperCase();
+        }
+    </script>
+</body>
+
+</html>
